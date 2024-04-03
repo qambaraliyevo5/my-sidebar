@@ -73,7 +73,7 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
 .icon {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  /* gap: 30px; */
   text-decoration: none;
   color: white;
   font-size: 25px;
@@ -84,16 +84,19 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
   color: white;
   display: flex;
   align-items: center;
+  width: 100%;
 }
 .sidebarmenu h1{
   font-size: 22px;
 }
 .sidebarmenu{
+  padding: 5px 0;
+  width: 100%;
   gap: 25px;
   transition: all 0.3s;
 }
 .sidebarmenu:hover{
-  padding: 0px 0px 0px 20px;
+  padding: 15px 0px 15px 20px;
 }
 .img{
   font-size: 35px;
