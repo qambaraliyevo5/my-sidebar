@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Routes, Route, NavLink, BrowserRouter } from "react-router-dom";
+
+// import './important.js';
+import { MdAssessment, MdDashboard, MdGroups2 } from "react-icons/md";
+import { IoIosMail } from "react-icons/io";
+import Mail from "./components/pages/mail";
+import Analystics from "./components/pages/analyistics";
+import Friends from "./components/pages/friend";
+import Home from "./components/pages/home";
+import Dashboard from "./components/pages/dashboard";
+import Layout from "./components/pages/layout";
+import NoPage from "./components/pages/notfound";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      
+      
+        <Routes>
+          
+          <Route path="/" element={<Layout />}>
+            <Route path="/Home" element={<Home />}></Route>
+            <Route path="/Friends" element={<Friends />}></Route>
+            <Route path="/Analystics" element={<Analystics />}></Route>
+            <Route path="/Dashboard" element={<Dashboard />}></Route>
+            <Route path="/Mail" element={<Mail />}></Route>
+            <Route path="*" element={<NoPage/>}/>
+            
+          </Route>
+        </Routes>
     </div>
   );
 }

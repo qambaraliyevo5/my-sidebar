@@ -1,0 +1,90 @@
+/* .App{
+    width: 100vw;
+    height: 100vh;
+  }
+  .body{
+    margin: 0;
+    padding: 0;
+  }
+  .sidebar-container{
+    height: 100%;
+    width: 250px;
+    background-color: #2f4050;
+  
+  }
+  .nav-list{
+   height: auto;
+   padding: 0;
+   width: 100%;
+   
+
+  }
+  .sidebarlist.row{
+width: 100%;
+height: 60px;
+list-style-type: none;
+display: flex;
+flex-direction: row;
+color: white;
+justify-content: center;
+align-items: center;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+ .row{
+    display: flex;
+    font-size: 30px;
+    gap: 15px;
+    padding-top: 20px;
+    align-items: center;
+    
+    
+ }
+ .sidebarlist>:hover{
+    background-color:#293846 ;
+    cursor: pointer;
+ } */
+ *{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+ }
+ .container{
+  display: flex;
+  background-color: #2f4050;
+  width: 100%;
+  height: 100vh;
+  
+ }
+ .sidebar{
+  width: 20%;
+
+ }
+ .sidebarcom{
+  width: 80%;
+  background-color: white;
+  
+ }
+ .icon{
+ display: flex;
+ flex-direction: column;
+ gap: 30px;
+ text-decoration: none;
+ color: white;
+ font-size: 25px;
+ align-items: center;
+ justify-content: center;
+ }
+ .icon li{
+  color: white;
+ }
+ .link li{
+  color: white;
+ }
+ .active:hover{
+  background-color:#293846 ;
+  cursor: pointer;
+} 
+
+ 
