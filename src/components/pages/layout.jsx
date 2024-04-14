@@ -11,35 +11,35 @@ const Layout = () => {
     <div className="container">
       <nav className="sidebar">
         <ul className="icon">
-          <NavLink to="/Home" activeClassName="active">
+          <NavLink to="/Home" className={"sidebarmenu"} activeClassName="active">
             <li className="sidebarmenu">
               <FaHome className="img" />
               <h1>Home</h1>
             </li>
           </NavLink>
 
-          <NavLink to="/Mail" activeClassName="active">
+          <NavLink to="/Mail" className={"sidebarmenu"} activeClassName="active">
             <li className="sidebarmenu">
               <IoIosMail className="img" />
               <h1>Mail</h1>
             </li>
           </NavLink>
 
-          <NavLink to="/Analystics" activeClassName="active">
+          <NavLink to="/Analystics" className={"sidebarmenu"} activeClassName="active">
             <li className="sidebarmenu">
               <MdAssessment className="img" />
               <h1>Analystics</h1>
             </li>
           </NavLink>
 
-          <NavLink to="/Dashboard" activeClassName="active">
+          <NavLink to="/Dashboard" className={"sidebarmenu"} activeClassName="active">
             <li className="sidebarmenu">
               <MdDashboard className="img" />
               <h1>Dashboard</h1>
             </li>
           </NavLink>
 
-          <NavLink to="/Friends" activeClassName="active">
+          <NavLink to="/Friends" className={"sidebarmenu"} activeClassName="active">
             <li className="sidebarmenu">
               <MdGroups2 className="img" />
               <h1>Friends</h1>
