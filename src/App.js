@@ -6,7 +6,7 @@ import { MdAssessment, MdDashboard, MdGroups2 } from "react-icons/md";
 import { IoIosMail } from "react-icons/io";
 import Mail from "./components/pages/mail";
 import Analystics from "./components/pages/analyistics";
-import Friends from "./components/pages/friend";
+import Friends from "./components/pages/friends/Friend";
 import Home from "./components/pages/home";
 import Dashboard from "./components/pages/dashboard";
 import Layout from "./components/pages/layout";
@@ -26,8 +26,10 @@ function App() {
             <Route path="/Dashboard" element={<Dashboard />}></Route>
             <Route path="/Mail" element={<Mail />}></Route>
             <Route path="*" element={<NoPage/>}/>
+            {/* <Route path="/Friends/profile" element={}/> */}
             
           </Route>
+          
         </Routes>
     </div>
   );
